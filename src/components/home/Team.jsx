@@ -1,20 +1,41 @@
-import React from 'react'
+import React from 'react';
 
 const Team = () => {
   return (
-    <div>
-      <img src="team.jpg" alt="" className='h-70' />
-       <div className='relative'>
-        <div className='absolute bottom-9 ml-16 text- text-[#6a5843]'>
-        <h1 className=' text-lg'>03 / THE PEOPLE</h1>
-        <p className='text-3xl font-bold mt-2 mb-2 text-[#c8ae96]'>BEHIND NEXORA</p>
-        <p className='text-XL'>WE 'RE A TEAM OF DREAMERS,DESIGHNERS AND <br /> CREATIVES _ UNITED BY SHARED PASSION <br /> FOR MEANINGFUL FASHION</p>  
+    <div className='relative w-full overflow-hidden'>
+      {/* Team Background Image (Desktop h-70 preserved on lg:) */}
+      <img 
+        src="team.jpg" 
+        alt="Behind Nexora Team" 
+        className='w-full h-72 sm:h-80 lg:h-70 object-cover' 
+      />
+
+      {/* Content Overlay (Desktop layout & margins preserved with lg:) */}
+      <div className='absolute inset-0 flex flex-col justify-center px-6 sm:px-12 bg-black/40 lg:bg-transparent lg:block lg:inset-auto lg:bottom-9 lg:ml-16 lg:px-0 text-[#6a5843]'>
         
-         <p className=' h-10 w-45 pl-6 pt-2 mt-5 text-white font-semibold bg-gradient-to-r from-[#78654e] via-[#ae977c] to-[#6d5845] rounded-lg cursor-pointer hover:transition-transform hover:scale-105 ease-in-out duration-300'>MEET OUT TEAM→</p>
-        </div>
+        {/* Section Number & Title */}
+        <h1 className='text-sm sm:text-base lg:text-lg font-medium text-[#e2d2be] lg:text-[#6a5843]'>
+          03 / THE PEOPLE
+        </h1>
+        <p className='text-2xl sm:text-3xl font-bold mt-1 sm:mt-2 mb-2 text-[#c8ae96] leading-tight'>
+          BEHIND NEXORA
+        </p>
+
+        {/* Description */}
+        <p className='text-sm sm:text-base lg:text-xl text-[#f3ebd9] lg:text-[#6a5843] leading-relaxed'>
+          WE'RE A TEAM OF DREAMERS, DESIGNERS AND <br className='hidden sm:inline' /> 
+          CREATIVES — UNITED BY SHARED PASSION <br className='hidden sm:inline' /> 
+          FOR MEANINGFUL FASHION
+        </p>  
+        
+        {/* CTA Button */}
+        <button className='h-10 w-45 mt-4 sm:mt-5 flex items-center justify-center text-sm sm:text-base text-white font-semibold bg-gradient-to-r from-[#78654e] via-[#ae977c] to-[#6d5845] rounded-lg cursor-pointer transition-transform hover:scale-105 ease-in-out duration-300'>
+          MEET OUR TEAM →
+        </button>
+
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Team
+export default Team;

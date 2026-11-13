@@ -17,8 +17,8 @@ const Home = () => {
     <div>
       <Home1/>
       <NewArrivals/>
-      <div className='flex flex-row gap-5 bg-[#efdecb]'>
-        <div className='ml-13'>
+      <div className='lg:flex lg:flex-row   gap-7 bg-[#efdecb]'>
+        <div className='lg:ml-13'>
       <NewArrival1 
        image={"https://i.pinimg.com/736x/8a/db/ca/8adbca281bc3cfbf331ffd76a9933a90.jpg"}
        paragraph="MEN"
@@ -56,7 +56,7 @@ const Home = () => {
 
       <Latest/>
       <div className='bg-[#efdecb]'>
-      <div className='flex flex-row ml-13 gap-7 flex-wrap '>
+      <div className='lg:grid grid-cols-4 ml-13  '>
       <Latest1
       
          image={"https://i.pinimg.com/736x/36/1a/2b/361a2b2818a5aaa1a5ea70e6fe16e94a.jpg"}
@@ -102,7 +102,9 @@ const Home = () => {
       
       
       />
-       <div className='-mt-20 flex flex-wrap gap-8'>
+       </div>
+       <div className='grid lg:grid-cols-4 ml-13 md:grid-cols- '>
+       
        <Latest1
       
          image={"https://i.pinimg.com/736x/94/1b/39/941b39654ee9bbbd68f7369d44c4d8df.jpg"}
@@ -112,6 +114,7 @@ const Home = () => {
         index={4}
       
       />
+      
 
        <Latest1
       
@@ -147,14 +150,14 @@ const Home = () => {
       />
        </div>
 
-      </div>
+     
        </div>
        <Team/>
        <div className='bg-[#efdecb] border border-[#efdecb] '>
        <Review/>
        </div>
         <div className='bg-[#efdecb]'>
-       <div className='flex flex-row ml-90 gap-6'>
+       <div className='lg:flex lg:flex-row lg:ml-90 lg:gap-6 p-7'>
        
        <Review1
        image="https://i.pinimg.com/736x/de/9f/c0/de9fc0ba86770a116e348b87f9e967b0.jpg"
@@ -170,7 +173,7 @@ const Home = () => {
        />
 
        </div>
-       <div className='ml-120 mt-20 '>
+       <div className='lg:ml-120 lg:mt-20 p-7 -mt-14 '>
        
          <Review1
        image="https://i.pinimg.com/736x/6d/8d/cd/6d8dcdbada45ee9125adc0923b7baa1e.jpg"

@@ -1,16 +1,29 @@
-import React from 'react'
+import React from 'react';
 
 const Review = () => {
   return (
-    <div className='mt-13 mb-5 ml-16 text-[#382d22]'>
-      <h1 className=' text-lg'>WHAT OUR CUSTOMERS SAY</h1>
-        <p className='text-4xl font-bold mt-2'>REAL STORIES</p>
-         <p className='text-4xl font-bold mb-2'>REAL STYLE</p>
-           <h1 className=' text-lg hover:text-white duration-300 ease-in-out transition-all cursor-pointer'>READ MORE REVIEWS→</h1>
+    <div className='bg-[#efdecb] lg:bg-transparent px-6 sm:px-12 py-10 lg:px-0 lg:mt-13 lg:mb-5 lg:ml-16 text-[#382d22]'>
+      
+      {/* Subtitle */}
+      <h1 className='text-sm sm:text-base lg:text-lg font-medium'>
+        WHAT OUR CUSTOMERS SAY
+      </h1>
 
-          
+      {/* Main Titles */}
+      <p className='text-2xl sm:text-3xl lg:text-4xl font-bold mt-2 leading-tight'>
+        REAL STORIES
+      </p>
+      <p className='text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 lg:mb-2 leading-tight'>
+        REAL STYLE
+      </p>
+
+      {/* Read More Link */}
+      <h1 className='text-sm sm:text-base lg:text-lg font-semibold hover:text-white duration-300 ease-in-out transition-all cursor-pointer inline-block'>
+        READ MORE REVIEWS →
+      </h1>
+
     </div>
-  )
-}
+  );
+};
 
-export default Review
+export default Review;

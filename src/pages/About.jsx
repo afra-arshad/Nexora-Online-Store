@@ -19,7 +19,7 @@ const About = () => {
       <About2/>
       </div>
 
-      <div className='flex pl-15 gap-8 bg-[#ffeeda]'>
+      <div className='lg:flex lg:pl-15 lg:gap-8 p-8  bg-[#ffeeda]'>
       <Design
        image={"https://i.pinimg.com/736x/9d/93/f1/9d93f116460d155e7db567a5029488cf.jpg"}
        icon={<LuCircleSlash2 />}

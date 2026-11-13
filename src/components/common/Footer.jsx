@@ -1,30 +1,30 @@
 import React from 'react';
 import { FaInstagram, FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
-import { HiLightningBolt } from 'react-icons/hi';
 
 const Footer = () => {
   return (
-    <footer className=" bg-[#927b62] text- text-[#443725] font-sans">
-      <div className="max-w-7xl mx-auto px-6 py-16 mt-0">
-        <div className="flex flex-row gap-3 ml-4 mr-30">
+    <footer className="bg-[#927b62] text-[#443725] font-sans">
+      <div className="max-w-7xl mx-auto px-6 py-12 lg:py-16 mt-0">
+        <div className="flex flex-col gap-10 md:grid md:grid-cols-2 md:gap-8 lg:flex lg:flex-row lg:gap-3 lg:ml-4 lg:mr-30">
           
+          {/* Brand & Socials */}
           <div className="flex-1">
             <div className="flex items-center gap-2 mb-4">
-            
-              <h1 className="text-7xl font-extrabold  mt-6 text-[#443725] tracking-wider" > NEXORA </h1>
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold lg:mt-6 text-[#443725] tracking-wider">
+                NEXORA
+              </h1>
             </div>
 
-           
-
             <div className="flex gap-4 pt-2">
-              <FaInstagram className="w-6 h-6 cursor-pointer hover:text-white" />
-              <FaFacebookF className="w-6 h-6 cursor-pointer hover:text-white" />
-              <FaLinkedinIn className="w-6 h-6 cursor-pointer hover:text-white" />
+              <FaInstagram className="w-6 h-6 cursor-pointer hover:text-white transition-colors" />
+              <FaFacebookF className="w-6 h-6 cursor-pointer hover:text-white transition-colors" />
+              <FaLinkedinIn className="w-6 h-6 cursor-pointer hover:text-white transition-colors" />
             </div>
           </div>
 
-          <div className="flex-1 ml-25">
-            <h3 className=" text-[#5c4b38] font-bold text-2xl tracking-wide mb-4 ">
+          {/* Important Links */}
+          <div className="flex-1 lg:ml-25">
+            <h3 className="text-[#5c4b38] font-bold text-2xl tracking-wide mb-4">
               Important Links
             </h3>
             <ul className="flex flex-col gap-3 text-md">
@@ -35,8 +35,9 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="flex-1 ml-5">
-            <h3 className=" text-[#5c4b38] font-bold text-2xl tracking-wide mb-4">
+          {/* Company */}
+          <div className="flex-1 lg:ml-5">
+            <h3 className="text-[#5c4b38] font-bold text-2xl tracking-wide mb-4">
               Company
             </h3>
             <ul className="flex flex-col gap-3 text-md">
@@ -46,8 +47,9 @@ const Footer = () => {
             </ul>
           </div>
 
+          {/* Resources */}
           <div className="flex-1">
-            <h3 className=" text-[#5c4b38] font-bold text-2xl tracking-wide mb-4">
+            <h3 className="text-[#5c4b38] font-bold text-2xl tracking-wide mb-4">
               Resources
             </h3>
             <ul className="flex flex-col gap-3 text-sm">
@@ -59,8 +61,6 @@ const Footer = () => {
           </div>
 
         </div>
-
-       
       </div>
     </footer>
   );

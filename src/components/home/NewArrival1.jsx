@@ -1,36 +1,36 @@
+import { motion } from 'framer-motion';
+import React from 'react';
+import { Animation } from '../../utility/Animation';
 
+const NewArrival1 = ({ image, paragraph, index }) => {
+  return (
+    <div className='w-full lg:w-auto flex justify-center overflow-hidden'>
+      <motion.div
+        variants={Animation(index * 0.20)}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false }}
+        className='relative border rounded-xl overflow-hidden my-3 lg:mb-20 lg:mt-10 shadow-md border-[#574839] w-full max-w-[220px] lg:max-w-none lg:w-53 shrink-0 bg-white/40'
+      >
+        {/* Category Image (Desktop h-65 w-53 preserved on lg:) */}
+        <div className='overflow-hidden'>
+          <img 
+            src={image} 
+            alt={paragraph || "New Arrival Category"} 
+            className='w-full h-56 sm:h-60 lg:h-65 lg:w-53 object-cover transition-transform hover:scale-105 duration-300 ease-in-out' 
+          />
+        </div>
+        
+        {/* Category Label Overlay */}
+        <div className='absolute bottom-4 left-4 right-4'>
+          <p className='text-base sm:text-lg lg:text-xl font-bold text-white drop-shadow-md cursor-pointer flex items-center justify-between'>
+            <span className='truncate'>{paragraph}</span>
+            <span className='text-xl lg:text-2xl font-bold text-white ml-1'>→</span>
+          </p>
+        </div>
+      </motion.div>
+    </div>
+  );
+};
 
-import { motion } from 'framer-motion'
-import React from 'react'
-import { Animation, SlideLeft, SlideUpward } from '../../utility/Animation'
-
-
-const NewArrival1 = ({image,paragraph,index}) => {
- return (
- 
- <div className='overflow-hidden'>
- 
- <motion.div
-
- variants={Animation(index * 0.20)} // Multiply index for staggered delay
- initial="hidden"
- whileInView="visible"
- viewport={{ once: false }}
- 
- 
- 
- className='relative border w-53 rounded-xl overflow-hidden mb-20 mt-10 shadow-md border-[#574839] '>
- <img src={image} alt="New Arrival" className='h-65 w-53 hover:transition-transform hover:scale-105 hover: duration-300 hover:ease-in-out' />
- 
- {/* Add inset-0 here */}
- <div className='absolute bottom-10 ml-5'>
- <p className='text-xl font-bold  text-[#2e251e]  cursor-pointer text-white '>{paragraph}<span className='text-2xl font-bold text-white'>→</span></p>
- </div>
-</motion.div>
-</div>
-
-
- )
-}
-
-export default NewArrival1
+export default NewArrival1;

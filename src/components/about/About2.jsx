@@ -4,7 +4,7 @@ import {motion} from 'framer-motion'
 
 const About2 = () => {
   return (
-    <div className='bg-[#ffeeda] border border-[#fff0df]'>
+    <div className='bg-[#ffeeda] border border-[#fff0df] '>
       <motion.h3 
       
             variants={SlideLeft(0.8)}
@@ -31,7 +31,7 @@ const About2 = () => {
                  viewport={{ once: true }}
        
        
-       className='font-bold text-3xl  text-[#342a21] ml-15'>IT'S A MINDSET</motion.h1>
+       className='font-bold text-3xl  text-[#342a21] ml-15 '>IT'S A MINDSET</motion.h1>
         <motion.h3
             variants={SlideLeft(0.8)}
                     initial="hidden"
